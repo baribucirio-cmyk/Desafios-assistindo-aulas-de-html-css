@@ -6,18 +6,20 @@
 }
 html, body{
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.119);
+    background-color: rgba(0, 0, 0, 0.326);
 }
 header{
     background-color: blue;
     color: white
     ;
+    margin-top: -30px;
+    margin-bottom: -10px;
     text-align: center;
 }
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
-
+    font: 3em bold sans-serif;
 }
 header > p{
     padding-bottom: 50px;
@@ -28,7 +30,11 @@ a{
     font: bolder;
 }
 a:hover{
+    background-color: chartreuse;
+    color: black;
+    padding: 5px;
     text-decoration: underline;
+    border-radius: 10px;
 }
 section{
     padding-top: 10vh;
@@ -41,12 +47,34 @@ section.normal{
     color: black;
 }
 section.imagem{
-    background-color: rgba(0, 0, 0, 0.334);
+    background-color: white;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px
+    black;
+}
+section#img01 {
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img02 {
+    background-image: url("imagens/background002.jpg");
+    background-position: right bottom;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section > p {
+    padding-bottom: 2em;
+    font-family: cursive;
 }
 section.imagem > p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.538);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    text-shadow: 1px 1px 0px black;
+    background-color: rgba(0, 0, 0, 0.388);
+    padding: 5px;
 }
 
 
